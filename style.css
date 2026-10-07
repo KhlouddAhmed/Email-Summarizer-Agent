@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #0d0d1a;
+  color: #e0d7ff;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #c084fc;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+}
+
+.label {
+  font-weight: bold;
+  color: #a855f7;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.summary-box {
+  background: #1a1a2e;
+  border-left: 4px solid #c084fc;
+  padding: 24px;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  font-size: 15px;
+  line-height: 2;
+  color: #e0d7ff;
+  box-shadow: 0 4px 20px rgba(192, 132, 252, 0.2);
+}
+
+.agent-tag {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #6b21a8;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #2d1b4e;
+  border-radius: 6px;
+  background: #120d1f;
+}
+
+.input-section {
+  background: #1a1a2e;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  border: 1px solid #2d1b4e;
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.1);
+}
+
+textarea {
+  width: 100%;
+  background: #0d0d1a;
+  border: 1px solid #4c1d95;
+  border-radius: 8px;
+  padding: 16px;
+  color: #e0d7ff;
+  font-size: 14px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  resize: vertical;
+  margin-top: 8px;
+  transition: border-color 0.2s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #c084fc;
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.2);
+}
+
+textarea::placeholder {
+  color: #4a4060;
+}
+
+button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  letter-spacing: 0.5px;
+}
+
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+#resetBtn {
+  margin-top: 24px;
+  background: transparent;
+  border: 1px solid #7c3aed;
+  color: #a855f7;
+}
+
+.results-section {
+  transition: opacity 0.3s;
+}
+
+.hidden {
+  display: none;
+}

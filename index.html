@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Summarizer Agent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <h1>Email Summarizer Agent</h1>
+
+  <div class="input-section">
+    <div class="label">Paste Your Email :</div>
+    <textarea id="emailInput" placeholder="Paste your email then click Summarize..." rows="12"></textarea>
+    <button id="summarizeBtn">Summarize Email</button>
+  </div>
+
+  <div id="resultsSection" class="results-section hidden">
+    <div class="label">AI Summary:</div>
+    <div class="summary-box" id="summary"></div>
+    <button id="resetBtn">Summarize Another Email</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
